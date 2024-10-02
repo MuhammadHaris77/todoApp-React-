@@ -38,7 +38,7 @@ function App() {
         <ul className="container p-5">
           {
             todo.length > 0 ?
-              todo.map((item, index) => <li className=' text-center m-2 rounded p-2 bg-light'  style={{ width: "100%",fontWeight:"bold" }} key={index}> <span style={{paddingRight:"500px",paddingLeft:"400px"}}>{item}</span> <button className='btn btn-danger m-1' onClick={(e) => deleteTodo(index)}>Delete</button><button className='btn btn-success m-1' onClick={(e) => editTodo(index)}>Edit</button></li>) : <h1 className='text-center text-danger'>No Todo Found In List</h1>
+              todo.map((item, index) => <li className=' text-center m-2 rounded p-2 bg-light'  style={{ width: "100%",fontWeight:"bold" }} key={index}> <span style={{paddingRight:"300px",paddingLeft:"400px"}}>{item}</span> <button className='btn btn-danger m-1' onClick={(e) => deleteTodo(index)}>Delete</button><button className='btn btn-success m-1' onClick={(e) => editTodo(index)}>Edit</button></li>) : <h1 className='text-center text-danger'>No Todo Found In List</h1>
           }
 
         </ul>
