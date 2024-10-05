@@ -20,8 +20,12 @@ function App() {
 
 
   const editTodo = (index) => {
-    const todotemp = [...todo]
-    setInput(todotemp[index], input)
+     const updateValue= prompt("enter value?")
+    todo.splice(index,1,updateValue)
+    setTodo([...todo])
+
+    // const todotemp = [...todo]
+    // setInput(todotemp[index], input)
   }
 
 
